@@ -1,0 +1,7 @@
+
+
+Data logs are stored  under C:\Users\Arti\Documents\StarCraft II\UserLogs\(Map)\(DataLog.txt)
+	Map refers to the name of the SCII map.
+	DataLog is saved as DataLog_Player1 and DataLog_Player2 respectively.
+
+In General they will be saved under in the same directory of SCII.     (.\UserLogs\(Map)\(DataLog.txt)
