@@ -2,4 +2,9 @@ package FileModerator;
 
 public class ModeratorMain {
 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
 }
