@@ -9,3 +9,7 @@ In General they will be saved under in the same directory of SCII.     (.\UserLo
 We can use two methods for tracking the files:
 	1. Devoted thread that checks when the file is updated and then runs analysis
 	2. watchService - Java 7 service that will automatically watch directories/files
+	
+	
+Used the provided WatchDir code to implement much of directory watching. 
+	http://docs.oracle.com/javase/tutorial/essential/io/notification.html
