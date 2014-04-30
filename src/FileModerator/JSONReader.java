@@ -44,7 +44,8 @@ public class JSONReader {
 		//br_decoded = decode(br);
 		
 		//STRING -> JSON
-		JSONTokener tokener = new JSONTokener(stripBom(sb.toString()));
+		BufferedReader stringForJson = decode(stripBom(sb.toString()));
+		JSONTokener tokener = new JSONTokener(stringForJson);
 		JSONObject root;
 		
 		long update;
@@ -53,15 +54,10 @@ public class JSONReader {
 			root = new JSONObject(tokener);
 			update = root.getLong("update");
 			
-			
 			if(update > lastUpdate){
 				if(update != lastUpdate+1){
 					System.out.println("Missing between "+lastUpdate+" and "+ update);
 				}
-				System.out.println("GOT ONE : "+update);
-				//do something with this object
-				//JSON -> MEMORY
-				//jsons.add(root);
 				lastUpdate = update;
 				if(isPlayer1){
 					jsonStringsPlayer1.add(root);
@@ -99,6 +95,10 @@ public class JSONReader {
 		}
 		
 		return new BufferedReader(pbr);
+	}
+	
+	public BufferedReader decode(BufferedReader input){
+		return input;
 	}
 }
 
