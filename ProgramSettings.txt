@@ -1,0 +1,4 @@
+{
+"readDirectory":"C://Users/Arti/Documents/StarCraft II/UserLogs/Agria Valley/",
+"writeDirectory":"./"
+}
