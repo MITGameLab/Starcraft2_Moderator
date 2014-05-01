@@ -11,6 +11,8 @@ import java.util.*;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
+import ui.Screen;
+
 public class ModeratorMain {
 	
 	private JSONReader reader;
@@ -164,8 +166,9 @@ public class ModeratorMain {
 	public static void main(String[] args) throws IOException {
 		
 		
-		new ModeratorMain().processEvents();
-		
+		//new ModeratorMain().processEvents();
+		String var = "C://Users/"+System.getProperty("user.name")+"/Documents/StarCraft II/UserLogs/Agria Valley/";
+		new Screen(var,"./");
 		
 	}
 
